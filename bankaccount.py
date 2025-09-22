@@ -5,7 +5,7 @@ if __name__ == "__main__":
     pass
 
 class BankAccount:
-    def __init__(self,balance):
+    def __init__(self,balance = 0):
         self.balance=balance
 
     def deposit(self,n):
