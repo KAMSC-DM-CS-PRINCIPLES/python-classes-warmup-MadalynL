@@ -1,6 +1,9 @@
 # TODO create class PythagoreanTheorem
 import math
 
+if __name__ == "__main__":
+    # create PythagoreanTheorem below this
+    pass
 
 class PythagoreanTheorem:
     def __init__(self, a, b):
@@ -9,7 +12,3 @@ class PythagoreanTheorem:
     def hypotenuse(self,a,b):
         hyp= math.sqrt(a**2+b**2)
         return hyp
-
-if __name__ == "__main__":
-    # create PythagoreanTheorem below this
-    pass
