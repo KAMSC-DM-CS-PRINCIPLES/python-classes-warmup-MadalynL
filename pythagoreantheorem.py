@@ -7,7 +7,7 @@ if __name__ == "__main__":
 
 class PythagoreanTheorem:
     def __init__(self, a, b):
-        a=self.a
-        b=self.b
+        self.a = a
+        self.b = b
     def hypotenuse(self):
         return math.sqrt(self.a**2+self.b**2)
