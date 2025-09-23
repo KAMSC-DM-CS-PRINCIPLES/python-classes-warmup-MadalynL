@@ -1,8 +1,6 @@
 # TODO create class BankAccount
 
-if __name__ == "__main__":
-    # create BankAccount below this
-    pass
+
 
 class BankAccount:
     def __init__(self,balance = 0):
@@ -16,7 +14,7 @@ class BankAccount:
 
     def withdraw(self,n):
         if n>self.balance:
-            return "Insefficent Funds"
+            return "Insufficent Funds"
         elif n<0:
             return self.balance
 
@@ -24,3 +22,10 @@ class BankAccount:
 
     def get_balance(self):
         return self.balance
+
+if __name__ == "__main__":
+        # create BankAccount below this
+    bank = BankAccount(100)
+    print(bank.deposit(30))
+    print(bank.withdraw(30))
+
