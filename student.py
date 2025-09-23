@@ -14,4 +14,4 @@ class Student:
     def get_grade(self):
         return self.grade
     def set_grade(self,newNum):
-        grade= newNum
+        self.grade= newNum
