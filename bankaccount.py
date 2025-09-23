@@ -8,17 +8,17 @@ class BankAccount:
 
     def deposit(self,n):
         if self.balance <0 :
-            return self.balance
+            return "can not be negative"
         self.balance+=n
         return self.balance
 
     def withdraw(self,n):
         if n>self.balance:
-            return "Insufficent Funds"
+            return "Insufficient Funds"
         elif n<0:
             return self.balance
-
-        return self.balance-n
+        self.balance = self.balance - n
+        return self.balance
 
     def get_balance(self):
         return self.balance
@@ -28,4 +28,5 @@ if __name__ == "__main__":
     bank = BankAccount(100)
     print(bank.deposit(30))
     print(bank.withdraw(30))
+    print(bank.get_balance())
 
