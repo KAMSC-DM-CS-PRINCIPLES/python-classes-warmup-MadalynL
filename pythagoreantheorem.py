@@ -9,6 +9,5 @@ class PythagoreanTheorem:
     def __init__(self, a, b):
         a=self.a
         b=self.b
-    def hypotenuse(self,a,b):
-        hyp= math.sqrt(a**2+b**2)
-        return hyp
+    def hypotenuse(self):
+        return math.sqrt(self.a**2+self.b**2)
